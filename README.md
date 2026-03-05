@@ -1,6 +1,6 @@
-# XXX Ontology
+# Citizens services Ontology
 
-The XXX ontology describes the domain of XXX
+The STICS Citizens Services ontology describes the domain of citizens and local services.
 
 
 # Purpose and scope of the vocabulary
