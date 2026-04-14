@@ -5,12 +5,13 @@ The STICS Citizens Services ontology describes the domain of citizens and local 
 
 # Purpose and scope of the vocabulary
 
-The purpose of the STICS Citizens Services ontology is to represent knowledge about agents as citizens or organizations and the information related to services offered to citizens. 
-The scope of the XXX ontology is limited to ZZZ.
+The purpose of the STICS Citizens Services ontology is to represent knowledge about agents as citizens or organizations and the information related to services offered to citizens.
+
+The scope of the STICS Citizens Services ontology ontology is limited to the use of citizens' data in relation with lot ownerships, permanent residence and  municipality agendas.
 
 # Ontology prefix and namespace
 
-The XXX ontology prefix is: XXX and it is published under the namespace: https://webdomain.ext/def/domain/subdomain# 
+The STICS Citizens Services ontology prefix is: citser and it is published under the namespace: https://webdomain.ext/def/citizen# 
 
 # Ontology Conceptualization Image
 
