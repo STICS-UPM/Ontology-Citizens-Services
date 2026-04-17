@@ -51,6 +51,6 @@ citser38;;;A source have 0 or many soruce  attribute to indicate: The responsibl
 
 If accepted look for more information at Responsibility,based on ISO 19115-1";6.3.4 LA_Source (ISO19152-1);;;;
 citser39;;;A source can have 0 or 1  submission  attribute to indicate: The date of submission of the source by a party.;DateTime, based on ISO 19108;Proposed;;;;;;
-;;;A physical person can apply for the permanent residence verification;;;;;;;;
-;;;Physical personas or organization can own lands/lots;;;;;;;;
-;;;;;;"We need mor information for ""contacts at a municipality - in relation to their responsibilities with agendas in the municipality,""";;;;;
+citser40;;;A physical person can apply for the permanent residence verification;;;;;;;;
+citser41;;;Physical personas or organization can own lands/lots;;;;;;;;
+;;;;;;"We need more information for ""contacts at a municipality - in relation to their responsibilities with agendas in the municipality,""";;;;;
