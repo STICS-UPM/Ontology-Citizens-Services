@@ -1,0 +1,193 @@
+@prefix citser: <http://www.owl-ontologies.com/citser#> .
+@prefix citserv: <https://stics.linkeddata.es/def/citser#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:contributor a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+citser:BasicAdministrativeUnitLegalRelationship a owl:Class ;
+    rdfs:label "Basic Administrative Unit Legal Relationship" ;
+    rdfs:subClassOf citser:BasicAdministrativeUnitRelationship .
+
+citser:BasicAdministrativeUnitSpatialRelationship a owl:Class ;
+    rdfs:label "Basic Administrative Unit Spatial Relationship" ;
+    rdfs:subClassOf citser:BasicAdministrativeUnitRelationship .
+
+citser:BasicAdministrativeUnitTemporalRelationship a owl:Class ;
+    rdfs:label "Basic Administrative Unit Temporal Relationship" ;
+    rdfs:subClassOf citser:BasicAdministrativeUnitRelationship .
+
+citser:Regulation a owl:Class ;
+    rdfs:label "Regulation" .
+
+citser:Responsability a owl:Class ;
+    rdfs:label "Responsability" ;
+    rdfs:subClassOf citser:Rule .
+
+citser:Restriction a owl:Class ;
+    rdfs:label "Restriction" ;
+    rdfs:subClassOf citser:Rule .
+
+citser:Right a owl:Class ;
+    rdfs:label "Right" ;
+    rdfs:subClassOf citser:Rule .
+
+citser:administeredBy a owl:ObjectProperty ;
+    rdfs:label "administered by" ;
+    rdfs:domain citser:Land ;
+    rdfs:range citser:LandAdministrationProcess .
+
+citser:appliesFor a owl:ObjectProperty ;
+    rdfs:label "applies for" ;
+    rdfs:domain citser:PhysicalPerson ;
+    rdfs:range citser:PermanenetResidenceVerification .
+
+citser:availabilityStatus a owl:DatatypeProperty ;
+    rdfs:label "availability status" .
+
+citser:basedOnSource a owl:ObjectProperty ;
+    rdfs:label "based on source" ;
+    rdfs:domain citser:Rule ;
+    rdfs:range citser:Source .
+
+citser:composedBySpatialUnit a owl:ObjectProperty ;
+    rdfs:label "composed by spatial unit" ;
+    rdfs:domain citser:SpatialUnitGroup ;
+    rdfs:range citser:SpatialUnit .
+
+citser:composedBySpatialUnitGroup a owl:ObjectProperty ;
+    rdfs:label "composed by spatial unit group" ;
+    rdfs:domain citser:SpatialUnitGroup ;
+    rdfs:range citser:SpatialUnitGroup .
+
+citser:composedBySubSpatialUnitGroup a owl:ObjectProperty ;
+    rdfs:label "composed by sub spatial unit group" ;
+    rdfs:domain citser:SpatialUnit ;
+    rdfs:range citser:SpatialUnit .
+
+citser:consistOfSpatialUnit a owl:ObjectProperty ;
+    rdfs:label "consist of spatial unit" ;
+    rdfs:domain citser:BasicAdministrativeUnit ;
+    rdfs:range citser:SpatialUnit .
+
+citser:coveredBy a owl:ObjectProperty ;
+    rdfs:label "covered by" ;
+    rdfs:domain citser:Land ;
+    rdfs:range citser:Rule .
+
+citser:involedBasicAdministrativeUnit a owl:ObjectProperty ;
+    rdfs:label "involed basic administrative unit" ;
+    rdfs:domain citser:BasicAdministrativeUnitRelationship ;
+    rdfs:range citser:BasicAdministrativeUnit .
+
+citser:registeredUnder a owl:ObjectProperty ;
+    rdfs:label "registered under" ;
+    rdfs:domain citser:BasicAdministrativeUnit ;
+    rdfs:range citser:Rule .
+
+citser:takesPartyAt a owl:ObjectProperty ;
+    rdfs:label "takes party at" ;
+    rdfs:domain citser:Party ;
+    rdfs:range citser:GroupParty,
+        citser:Process .
+
+owl:versionIRI a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+citserv: a owl:Ontology ;
+    dcterms:contributor <https://w3id.org/people#AContributorURI> ;
+    dcterms:created "2026-04-01"^^xsd:date ;
+    dcterms:creator <https://w3id.org/people#AuthorURI> ;
+    dcterms:description "TBD"@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "The STICS citizen services ontology"@en ;
+    vann:preferredNamespacePrefix "ex" ;
+    vann:preferredNamespaceUri <https://w3id.org/example#> ;
+    owl:versionIRI <https://stics.linkeddata.es/def/citser#/1.0.1> ;
+    owl:versionInfo "0.0.1" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+citser:GroupParty a owl:Class ;
+    rdfs:label "Group Party" .
+
+citser:LandAdministrationProcess a owl:Class ;
+    rdfs:label "Land Administration Process" ;
+    rdfs:subClassOf citser:Process .
+
+citser:PermanenetResidenceVerification a owl:Class ;
+    rdfs:label "Permanenet Residence Verification" ;
+    rdfs:subClassOf citser:Process .
+
+citser:PhysicalPerson a owl:Class ;
+    rdfs:label "Physical Person" ;
+    rdfs:subClassOf citser:Party .
+
+citser:Source a owl:Class ;
+    rdfs:label "Source" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onDataRange xsd:dateTime ;
+            owl:onProperty citser:acceptance ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onDataRange owl:Thing ;
+            owl:onProperty citser:extArchiveID ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onDataRange xsd:dateTime ;
+            owl:onProperty citser:lifeSpanStramp ] .
+
+citser:acceptance a owl:DatatypeProperty ;
+    rdfs:label "acceptance" ;
+    rdfs:range xsd:dateTime .
+
+citser:extArchiveID a owl:DatatypeProperty ;
+    rdfs:label "ext archive i d" .
+
+citser:lifeSpanStramp a owl:DatatypeProperty ;
+    rdfs:label "life span stramp" ;
+    rdfs:range xsd:dateTime .
+
+citser:Land a owl:Class ;
+    rdfs:label "Land" .
+
+citser:Party a owl:Class ;
+    rdfs:label "Party" .
+
+citser:BasicAdministrativeUnit a owl:Class ;
+    rdfs:label "Basic Administrative Unit" .
+
+citser:Process a owl:Class ;
+    rdfs:label "Process" .
+
+citser:SpatialUnitGroup a owl:Class ;
+    rdfs:label "Spatial Unit Group" .
+
+citser:BasicAdministrativeUnitRelationship a owl:Class ;
+    rdfs:label "Basic Administrative Unit Relationship" .
+
+citser:SpatialUnit a owl:Class ;
+    rdfs:label "Spatial Unit" .
+
+citser:Rule a owl:Class ;
+    rdfs:label "Rule" .
+
