@@ -11,7 +11,7 @@ The scope of the STICS Citizens Services ontology ontology is limited to the use
 
 # Ontology prefix and namespace
 
-The STICS Citizens Services ontology prefix is: citser and it is published under the namespace: https://stics.linkeddata.es/datasetdef/citizen# 
+The STICS Citizens Services ontology prefix is: citser and it is published under the namespace: https://stics.linkeddata.es/def/citser# 
 
 # Ontology Conceptualization Image
 
