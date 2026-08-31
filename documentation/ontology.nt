@@ -1,0 +1,282 @@
+<https://stics.linkeddata.es/def/citser#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://stics.linkeddata.es/def/citser#> <http://www.w3.org/2002/07/owl#versionIRI> <https://stics.linkeddata.es/def/citser#/0.0.1> .
+<https://stics.linkeddata.es/def/citser#> <http://purl.org/dc/terms/contributor> "Jorge Almeida" .
+<https://stics.linkeddata.es/def/citser#> <http://purl.org/dc/terms/created> "2026-04-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://stics.linkeddata.es/def/citser#> <http://purl.org/dc/terms/creator> "María Poveda-Villalón" .
+<https://stics.linkeddata.es/def/citser#> <http://purl.org/dc/terms/description> "The STICS ontology for describing citizen services related to spatial units and land regularion."@en .
+<https://stics.linkeddata.es/def/citser#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://stics.linkeddata.es/def/citser#> <http://purl.org/dc/terms/title> "The STICS citizen services ontology"@en .
+<https://stics.linkeddata.es/def/citser#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "citser" .
+<https://stics.linkeddata.es/def/citser#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://stics.linkeddata.es/def/citser#> .
+<https://stics.linkeddata.es/def/citser#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+<https://stics.linkeddata.es/def/citser#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2002/07/owl#Thing
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://stics.linkeddata.es/def/citser#administeredBy
+<https://stics.linkeddata.es/def/citser#administeredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stics.linkeddata.es/def/citser#administeredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stics.linkeddata.es/def/citser#Land> .
+<https://stics.linkeddata.es/def/citser#administeredBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://stics.linkeddata.es/def/citser#LandAdministrationProcess> .
+<https://stics.linkeddata.es/def/citser#administeredBy> <http://www.w3.org/2000/01/rdf-schema#label> "administered by" .
+# 
+# https://stics.linkeddata.es/def/citser#appliesFor
+<https://stics.linkeddata.es/def/citser#appliesFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stics.linkeddata.es/def/citser#appliesFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stics.linkeddata.es/def/citser#PhysicalPerson> .
+<https://stics.linkeddata.es/def/citser#appliesFor> <http://www.w3.org/2000/01/rdf-schema#range> <https://stics.linkeddata.es/def/citser#PermanenetResidenceVerification> .
+<https://stics.linkeddata.es/def/citser#appliesFor> <http://www.w3.org/2000/01/rdf-schema#label> "applies for" .
+# 
+# https://stics.linkeddata.es/def/citser#basedOnSource
+<https://stics.linkeddata.es/def/citser#basedOnSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stics.linkeddata.es/def/citser#basedOnSource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stics.linkeddata.es/def/citser#Rule> .
+<https://stics.linkeddata.es/def/citser#basedOnSource> <http://www.w3.org/2000/01/rdf-schema#range> <https://stics.linkeddata.es/def/citser#Source> .
+<https://stics.linkeddata.es/def/citser#basedOnSource> <http://www.w3.org/2000/01/rdf-schema#label> "based on source" .
+# 
+# https://stics.linkeddata.es/def/citser#composedBySpatialUnit
+<https://stics.linkeddata.es/def/citser#composedBySpatialUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stics.linkeddata.es/def/citser#composedBySpatialUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stics.linkeddata.es/def/citser#SpatialUnitGroup> .
+<https://stics.linkeddata.es/def/citser#composedBySpatialUnit> <http://www.w3.org/2000/01/rdf-schema#range> <https://stics.linkeddata.es/def/citser#SpatialUnit> .
+<https://stics.linkeddata.es/def/citser#composedBySpatialUnit> <http://www.w3.org/2000/01/rdf-schema#label> "composed by spatial unit" .
+# 
+# https://stics.linkeddata.es/def/citser#composedBySpatialUnitGroup
+<https://stics.linkeddata.es/def/citser#composedBySpatialUnitGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stics.linkeddata.es/def/citser#composedBySpatialUnitGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stics.linkeddata.es/def/citser#SpatialUnitGroup> .
+<https://stics.linkeddata.es/def/citser#composedBySpatialUnitGroup> <http://www.w3.org/2000/01/rdf-schema#range> <https://stics.linkeddata.es/def/citser#SpatialUnitGroup> .
+<https://stics.linkeddata.es/def/citser#composedBySpatialUnitGroup> <http://www.w3.org/2000/01/rdf-schema#label> "composed by spatial unit group" .
+# 
+# https://stics.linkeddata.es/def/citser#composedBySubSpatialUnitGroup
+<https://stics.linkeddata.es/def/citser#composedBySubSpatialUnitGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stics.linkeddata.es/def/citser#composedBySubSpatialUnitGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stics.linkeddata.es/def/citser#SpatialUnit> .
+<https://stics.linkeddata.es/def/citser#composedBySubSpatialUnitGroup> <http://www.w3.org/2000/01/rdf-schema#range> <https://stics.linkeddata.es/def/citser#SpatialUnit> .
+<https://stics.linkeddata.es/def/citser#composedBySubSpatialUnitGroup> <http://www.w3.org/2000/01/rdf-schema#label> "composed by sub spatial unit group" .
+# 
+# https://stics.linkeddata.es/def/citser#consistOfSpatialUnit
+<https://stics.linkeddata.es/def/citser#consistOfSpatialUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stics.linkeddata.es/def/citser#consistOfSpatialUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stics.linkeddata.es/def/citser#BasicAdministrativeUnit> .
+<https://stics.linkeddata.es/def/citser#consistOfSpatialUnit> <http://www.w3.org/2000/01/rdf-schema#range> <https://stics.linkeddata.es/def/citser#SpatialUnit> .
+<https://stics.linkeddata.es/def/citser#consistOfSpatialUnit> <http://www.w3.org/2000/01/rdf-schema#label> "consist of spatial unit" .
+# 
+# https://stics.linkeddata.es/def/citser#coveredBy
+<https://stics.linkeddata.es/def/citser#coveredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stics.linkeddata.es/def/citser#coveredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stics.linkeddata.es/def/citser#Land> .
+<https://stics.linkeddata.es/def/citser#coveredBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://stics.linkeddata.es/def/citser#Rule> .
+<https://stics.linkeddata.es/def/citser#coveredBy> <http://www.w3.org/2000/01/rdf-schema#label> "covered by" .
+# 
+# https://stics.linkeddata.es/def/citser#involedBasicAdministrativeUnit
+<https://stics.linkeddata.es/def/citser#involedBasicAdministrativeUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stics.linkeddata.es/def/citser#involedBasicAdministrativeUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitRelationship> .
+<https://stics.linkeddata.es/def/citser#involedBasicAdministrativeUnit> <http://www.w3.org/2000/01/rdf-schema#range> <https://stics.linkeddata.es/def/citser#BasicAdministrativeUnit> .
+<https://stics.linkeddata.es/def/citser#involedBasicAdministrativeUnit> <http://www.w3.org/2000/01/rdf-schema#label> "involed basic administrative unit" .
+# 
+# https://stics.linkeddata.es/def/citser#registeredUnder
+<https://stics.linkeddata.es/def/citser#registeredUnder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stics.linkeddata.es/def/citser#registeredUnder> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stics.linkeddata.es/def/citser#BasicAdministrativeUnit> .
+<https://stics.linkeddata.es/def/citser#registeredUnder> <http://www.w3.org/2000/01/rdf-schema#range> <https://stics.linkeddata.es/def/citser#Rule> .
+<https://stics.linkeddata.es/def/citser#registeredUnder> <http://www.w3.org/2000/01/rdf-schema#label> "registered under" .
+# 
+# https://stics.linkeddata.es/def/citser#takesPartyAt
+<https://stics.linkeddata.es/def/citser#takesPartyAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://stics.linkeddata.es/def/citser#takesPartyAt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://stics.linkeddata.es/def/citser#Party> .
+<https://stics.linkeddata.es/def/citser#takesPartyAt> <http://www.w3.org/2000/01/rdf-schema#range> <https://stics.linkeddata.es/def/citser#GroupParty> .
+<https://stics.linkeddata.es/def/citser#takesPartyAt> <http://www.w3.org/2000/01/rdf-schema#range> <https://stics.linkeddata.es/def/citser#Process> .
+<https://stics.linkeddata.es/def/citser#takesPartyAt> <http://www.w3.org/2000/01/rdf-schema#label> "takes party at" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://stics.linkeddata.es/def/citser#acceptance
+<https://stics.linkeddata.es/def/citser#acceptance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://stics.linkeddata.es/def/citser#acceptance> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://stics.linkeddata.es/def/citser#acceptance> <http://www.w3.org/2000/01/rdf-schema#label> "acceptance" .
+# 
+# https://stics.linkeddata.es/def/citser#availabilityStatus
+<https://stics.linkeddata.es/def/citser#availabilityStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://stics.linkeddata.es/def/citser#availabilityStatus> <http://www.w3.org/2000/01/rdf-schema#label> "availability status" .
+# 
+# https://stics.linkeddata.es/def/citser#extArchiveID
+<https://stics.linkeddata.es/def/citser#extArchiveID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://stics.linkeddata.es/def/citser#extArchiveID> <http://www.w3.org/2000/01/rdf-schema#label> "ext archive i d" .
+# 
+# https://stics.linkeddata.es/def/citser#lifeSpanStramp
+<https://stics.linkeddata.es/def/citser#lifeSpanStramp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://stics.linkeddata.es/def/citser#lifeSpanStramp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://stics.linkeddata.es/def/citser#lifeSpanStramp> <http://www.w3.org/2000/01/rdf-schema#label> "life span stramp" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://stics.linkeddata.es/def/citser#BasicAdministrativeUnit
+<https://stics.linkeddata.es/def/citser#BasicAdministrativeUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#BasicAdministrativeUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Basic Administrative Unit" .
+# 
+# https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitLegalRelationship
+<https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitLegalRelationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitLegalRelationship> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitRelationship> .
+<https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitLegalRelationship> <http://www.w3.org/2000/01/rdf-schema#label> "Basic Administrative Unit Legal Relationship" .
+# 
+# https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitRelationship
+<https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitRelationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitRelationship> <http://www.w3.org/2000/01/rdf-schema#label> "Basic Administrative Unit Relationship" .
+# 
+# https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitSpatialRelationship
+<https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitSpatialRelationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitSpatialRelationship> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitRelationship> .
+<https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitSpatialRelationship> <http://www.w3.org/2000/01/rdf-schema#label> "Basic Administrative Unit Spatial Relationship" .
+# 
+# https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitTemporalRelationship
+<https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitTemporalRelationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitTemporalRelationship> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitRelationship> .
+<https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitTemporalRelationship> <http://www.w3.org/2000/01/rdf-schema#label> "Basic Administrative Unit Temporal Relationship" .
+# 
+# https://stics.linkeddata.es/def/citser#GroupParty
+<https://stics.linkeddata.es/def/citser#GroupParty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#GroupParty> <http://www.w3.org/2000/01/rdf-schema#label> "Group Party" .
+# 
+# https://stics.linkeddata.es/def/citser#Land
+<https://stics.linkeddata.es/def/citser#Land> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#Land> <http://www.w3.org/2000/01/rdf-schema#label> "Land" .
+# 
+# https://stics.linkeddata.es/def/citser#LandAdministrationProcess
+<https://stics.linkeddata.es/def/citser#LandAdministrationProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#LandAdministrationProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stics.linkeddata.es/def/citser#Process> .
+<https://stics.linkeddata.es/def/citser#LandAdministrationProcess> <http://www.w3.org/2000/01/rdf-schema#label> "Land Administration Process" .
+# 
+# https://stics.linkeddata.es/def/citser#Party
+<https://stics.linkeddata.es/def/citser#Party> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#Party> <http://www.w3.org/2000/01/rdf-schema#label> "Party" .
+# 
+# https://stics.linkeddata.es/def/citser#PermanenetResidenceVerification
+<https://stics.linkeddata.es/def/citser#PermanenetResidenceVerification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#PermanenetResidenceVerification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stics.linkeddata.es/def/citser#Process> .
+<https://stics.linkeddata.es/def/citser#PermanenetResidenceVerification> <http://www.w3.org/2000/01/rdf-schema#label> "Permanenet Residence Verification" .
+# 
+# https://stics.linkeddata.es/def/citser#PhysicalPerson
+<https://stics.linkeddata.es/def/citser#PhysicalPerson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#PhysicalPerson> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stics.linkeddata.es/def/citser#Party> .
+<https://stics.linkeddata.es/def/citser#PhysicalPerson> <http://www.w3.org/2000/01/rdf-schema#label> "Physical Person" .
+# 
+# https://stics.linkeddata.es/def/citser#Process
+<https://stics.linkeddata.es/def/citser#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process" .
+# 
+# https://stics.linkeddata.es/def/citser#Responsability
+<https://stics.linkeddata.es/def/citser#Responsability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#Responsability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stics.linkeddata.es/def/citser#Rule> .
+<https://stics.linkeddata.es/def/citser#Responsability> <http://www.w3.org/2000/01/rdf-schema#label> "Responsability" .
+# 
+# https://stics.linkeddata.es/def/citser#Restriction
+<https://stics.linkeddata.es/def/citser#Restriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#Restriction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stics.linkeddata.es/def/citser#Rule> .
+<https://stics.linkeddata.es/def/citser#Restriction> <http://www.w3.org/2000/01/rdf-schema#label> "Restriction" .
+# 
+# https://stics.linkeddata.es/def/citser#Right
+<https://stics.linkeddata.es/def/citser#Right> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#Right> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://stics.linkeddata.es/def/citser#Rule> .
+<https://stics.linkeddata.es/def/citser#Right> <http://www.w3.org/2000/01/rdf-schema#label> "Right" .
+# 
+# https://stics.linkeddata.es/def/citser#Rule
+<https://stics.linkeddata.es/def/citser#Rule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#Rule> <http://www.w3.org/2000/01/rdf-schema#label> "Rule" .
+# 
+# https://stics.linkeddata.es/def/citser#Source
+<https://stics.linkeddata.es/def/citser#Source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#Source> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid1 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://stics.linkeddata.es/def/citser#acceptance> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://stics.linkeddata.es/def/citser#Source> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid2 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://stics.linkeddata.es/def/citser#extArchiveID> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://stics.linkeddata.es/def/citser#Source> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid3 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://stics.linkeddata.es/def/citser#lifeSpanStramp> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://stics.linkeddata.es/def/citser#Source> <http://www.w3.org/2000/01/rdf-schema#label> "Source" .
+# 
+# https://stics.linkeddata.es/def/citser#SpatialUnit
+<https://stics.linkeddata.es/def/citser#SpatialUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#SpatialUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Spatial Unit" .
+# 
+# https://stics.linkeddata.es/def/citser#SpatialUnitGroup
+<https://stics.linkeddata.es/def/citser#SpatialUnitGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://stics.linkeddata.es/def/citser#SpatialUnitGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Spatial Unit Group" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

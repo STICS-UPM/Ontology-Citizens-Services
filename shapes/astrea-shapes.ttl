@@ -1,0 +1,302 @@
+@prefix mod:   <https://w3id.org/mod#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix citserv: <https://stics.linkeddata.es/def/citser#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix citser: <http://www.owl-ontologies.com/citser#> .
+
+<https://astrea.linkeddata.es/shapes#99deaa7c74a86e6213cc5c66bf8f2a15>
+a            sh:PropertyShape ;
+sh:nodeKind  sh:IRIOrLiteral ;
+sh:path      citser:extArchiveID .
+
+<https://astrea.linkeddata.es/shapes#c31f005d99aaeaf7fff1103ad1b96337>
+a               sh:NodeShape ;
+rdfs:label      "Basic Administrative Unit Temporal Relationship" ;
+sh:name         "Basic Administrative Unit Temporal Relationship" ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  citser:BasicAdministrativeUnitTemporalRelationship .
+
+<https://astrea.linkeddata.es/shapes#9cd1fd2217e7a554ca1fed9df961fa1a>
+a               sh:NodeShape ;
+rdfs:label      "Land Administration Process" ;
+sh:name         "Land Administration Process" ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  citser:LandAdministrationProcess .
+
+<https://astrea.linkeddata.es/shapes#f32a02717b081236b4f922297701c92d>
+a            sh:PropertyShape ;
+sh:nodeKind  sh:IRIOrLiteral ;
+sh:path      citser:acceptance .
+
+<https://astrea.linkeddata.es/shapes#a96d3d47904f146a7f888a83da9e032a>
+a               sh:NodeShape ;
+rdfs:label      "Group Party" ;
+sh:name         "Group Party" ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  citser:GroupParty .
+
+<https://astrea.linkeddata.es/shapes#27feb11bc2d8f08ec9c541063bdf3b72>
+a               sh:NodeShape ;
+rdfs:label      "Rule" ;
+sh:name         "Rule" ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#809d3fecb4de54565609e1ed80043640> ;
+sh:targetClass  citser:Rule .
+
+<https://astrea.linkeddata.es/shapes#9ce46cd257f8151da1dd03df95f35ffb>
+a            sh:PropertyShape ;
+rdfs:label   "acceptance" ;
+sh:datatype  xsd:dateTime ;
+sh:name      "acceptance" ;
+sh:nodeKind  sh:Literal ;
+sh:path      citser:acceptance ;
+sh:pattern   "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#6526f741f9fbb0dd1275e09f06a0462a>
+a            sh:PropertyShape ;
+rdfs:label   "consist of spatial unit" ;
+sh:class     citser:SpatialUnit ;
+sh:name      "consist of spatial unit" ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      citser:consistOfSpatialUnit .
+
+<https://astrea.linkeddata.es/shapes#6f01fee45aced9f0fd1ccb2c024cddca>
+a            sh:PropertyShape ;
+rdfs:label   "ext archive i d" ;
+sh:name      "ext archive i d" ;
+sh:nodeKind  sh:Literal ;
+sh:path      citser:extArchiveID .
+
+<https://astrea.linkeddata.es/shapes#153d4d143f95e05e0207cf7372840c6c>
+a            sh:PropertyShape ;
+rdfs:label   "life span stramp" ;
+sh:datatype  xsd:dateTime ;
+sh:name      "life span stramp" ;
+sh:nodeKind  sh:Literal ;
+sh:path      citser:lifeSpanStramp ;
+sh:pattern   "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#b95f53b2360d57330fcbac17c628ab8a>
+a               sh:NodeShape ;
+rdfs:label      "Restriction" ;
+sh:name         "Restriction" ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  citser:Restriction .
+
+<https://astrea.linkeddata.es/report/0620946147>
+a       <https://w3id.org/def/astrea#ReportEntry> ;
+<https://w3id.org/def/astrea#message>
+"Shapes generated with no errors" ;
+<https://w3id.org/def/astrea#statusCode>
+"200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#e1255ecb51f7b12cc3a87c0dbcb279e6>
+a               sh:NodeShape ;
+rdfs:label      "Land" ;
+sh:name         "Land" ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#5f6fa2f46e7673742b4696a796fc46b9> , <https://astrea.linkeddata.es/shapes#076ae143248b49f251915e7d1f1287ca> ;
+sh:targetClass  citser:Land .
+
+<https://astrea.linkeddata.es/shapes#6513a7b06589e5370583b601ce640bcf>
+a            sh:PropertyShape ;
+rdfs:label   "applies for" ;
+sh:class     citser:PermanenetResidenceVerification ;
+sh:name      "applies for" ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      citser:appliesFor .
+
+<https://astrea.linkeddata.es/shapes#9408c1841edc672ce7da664ccd66c9c7>
+a               sh:NodeShape ;
+rdfs:label      "Process" ;
+sh:name         "Process" ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  citser:Process .
+
+<https://astrea.linkeddata.es/shapes#8570b72bea96b6cfbfadf9ab83d4ddf1>
+a               sh:NodeShape ;
+rdfs:label      "Basic Administrative Unit Spatial Relationship" ;
+sh:name         "Basic Administrative Unit Spatial Relationship" ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  citser:BasicAdministrativeUnitSpatialRelationship .
+
+<https://astrea.linkeddata.es/shapes#fd72456c83f8ee3e2e7ffe40b0dc6124>
+a            sh:PropertyShape ;
+rdfs:label   "involed basic administrative unit" ;
+sh:class     citser:BasicAdministrativeUnit ;
+sh:name      "involed basic administrative unit" ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      citser:involedBasicAdministrativeUnit .
+
+<https://astrea.linkeddata.es/shapes#e794a4cb73c132bee9da497e296f5d28>
+a            sh:PropertyShape ;
+sh:nodeKind  sh:IRIOrLiteral ;
+sh:path      citser:lifeSpanStramp .
+
+<https://astrea.linkeddata.es/shapes#1ba44e5d4df22d84ac70603ea3af9fff>
+a            sh:PropertyShape ;
+rdfs:label   "availability status" ;
+sh:name      "availability status" ;
+sh:nodeKind  sh:Literal ;
+sh:path      citser:availabilityStatus .
+
+<https://astrea.linkeddata.es/shapes#076ae143248b49f251915e7d1f1287ca>
+a            sh:PropertyShape ;
+rdfs:label   "covered by" ;
+sh:class     citser:Rule ;
+sh:name      "covered by" ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      citser:coveredBy .
+
+<https://astrea.linkeddata.es/shapes#d47a74878ff3e06e8a695f5917567494>
+a               sh:NodeShape ;
+rdfs:label      "Right" ;
+sh:name         "Right" ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  citser:Right .
+
+<https://astrea.linkeddata.es/shapes#ff341d08a60890a182515261fdf67539>
+a            sh:PropertyShape ;
+rdfs:label   "composed by spatial unit group" ;
+sh:class     citser:SpatialUnitGroup ;
+sh:name      "composed by spatial unit group" ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      citser:composedBySpatialUnitGroup .
+
+<https://astrea.linkeddata.es/shapes#d55c23a70c127248d154a18065e8c791>
+a            sh:PropertyShape ;
+rdfs:label   "composed by spatial unit" ;
+sh:class     citser:SpatialUnit ;
+sh:name      "composed by spatial unit" ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      citser:composedBySpatialUnit .
+
+<https://astrea.linkeddata.es/shapes#5f6fa2f46e7673742b4696a796fc46b9>
+a            sh:PropertyShape ;
+rdfs:label   "administered by" ;
+sh:class     citser:LandAdministrationProcess ;
+sh:name      "administered by" ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      citser:administeredBy .
+
+<https://astrea.linkeddata.es/shapes#a3468ed0c348c58054df37030a146462>
+a               sh:NodeShape ;
+rdfs:label      "Basic Administrative Unit" ;
+sh:name         "Basic Administrative Unit" ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#6526f741f9fbb0dd1275e09f06a0462a> , <https://astrea.linkeddata.es/shapes#243c32ef063e36c1102225822e3a016e> ;
+sh:targetClass  citser:BasicAdministrativeUnit .
+
+<https://astrea.linkeddata.es/shapes#2c7c805f25f344468662c872f465b980>
+a               sh:NodeShape ;
+rdfs:label      "Physical Person" ;
+sh:name         "Physical Person" ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#6513a7b06589e5370583b601ce640bcf> ;
+sh:targetClass  citser:PhysicalPerson .
+
+<http://astrea.linkeddata.es/report>
+a       <https://w3id.org/def/astrea#ShapeReport> ;
+<https://w3id.org/def/astrea#contains>
+<https://astrea.linkeddata.es/shapes#809d3fecb4de54565609e1ed80043640> , <https://astrea.linkeddata.es/shapes#9408c1841edc672ce7da664ccd66c9c7> , <https://astrea.linkeddata.es/shapes#9ce46cd257f8151da1dd03df95f35ffb> , <https://astrea.linkeddata.es/shapes#99deaa7c74a86e6213cc5c66bf8f2a15> , <https://astrea.linkeddata.es/shapes#2c7c805f25f344468662c872f465b980> , <https://astrea.linkeddata.es/shapes#84fe5649b58c3d93daf8cf55d13ebe9d> , <https://astrea.linkeddata.es/shapes#5f6fa2f46e7673742b4696a796fc46b9> , <https://astrea.linkeddata.es/shapes#07aa5a746027050d9daa44efdf010de5> , <https://astrea.linkeddata.es/shapes#a96d3d47904f146a7f888a83da9e032a> , <https://astrea.linkeddata.es/shapes#243c32ef063e36c1102225822e3a016e> , <https://astrea.linkeddata.es/shapes#153d4d143f95e05e0207cf7372840c6c> , <https://astrea.linkeddata.es/shapes#8570b72bea96b6cfbfadf9ab83d4ddf1> , <https://astrea.linkeddata.es/shapes#1ba44e5d4df22d84ac70603ea3af9fff> , <https://astrea.linkeddata.es/shapes#99e2c0119dbf0b7e6c8cf15b975c4cf6> , <https://astrea.linkeddata.es/shapes#e27fd911ec01b960b3b9be761f141b1b> , <https://astrea.linkeddata.es/shapes#0f59f45779cb7c01c4d6f39b9f69d98a> , <https://astrea.linkeddata.es/shapes#442bb83430aee152b9bb6b2a53c7bc65> , <https://astrea.linkeddata.es/shapes#4192465c95d2ad50968e755613048a24> , <https://astrea.linkeddata.es/shapes#6f01fee45aced9f0fd1ccb2c024cddca> , <https://astrea.linkeddata.es/shapes#6526f741f9fbb0dd1275e09f06a0462a> , <https://astrea.linkeddata.es/shapes#27feb11bc2d8f08ec9c541063bdf3b72> , <https://astrea.linkeddata.es/shapes#076ae143248b49f251915e7d1f1287ca> , <https://astrea.linkeddata.es/shapes#a3468ed0c348c58054df37030a146462> , <https://astrea.linkeddata.es/shapes#b95f53b2360d57330fcbac17c628ab8a> , <https://astrea.linkeddata.es/shapes#e794a4cb73c132bee9da497e296f5d28> , <https://astrea.linkeddata.es/shapes#d55c23a70c127248d154a18065e8c791> , <https://astrea.linkeddata.es/shapes#0ffa821a9439ce314cb7f4ec2eee190d> , <https://astrea.linkeddata.es/shapes#fd72456c83f8ee3e2e7ffe40b0dc6124> , <https://astrea.linkeddata.es/shapes#9783bb26e48b71bb75b475f8a899447a> , <https://astrea.linkeddata.es/shapes#e1255ecb51f7b12cc3a87c0dbcb279e6> , <https://astrea.linkeddata.es/shapes#6513a7b06589e5370583b601ce640bcf> , <https://astrea.linkeddata.es/shapes#d47a74878ff3e06e8a695f5917567494> , <https://astrea.linkeddata.es/shapes#f32a02717b081236b4f922297701c92d> , <https://astrea.linkeddata.es/shapes#ff341d08a60890a182515261fdf67539> , <https://astrea.linkeddata.es/shapes#c31f005d99aaeaf7fff1103ad1b96337> , <https://astrea.linkeddata.es/shapes#5e3043e7c2502891ec5bb8e30d6bacad> , <https://astrea.linkeddata.es/shapes#9cd1fd2217e7a554ca1fed9df961fa1a> ;
+<https://w3id.org/def/astrea#generatedShapesFrom>
+<https://astrea.linkeddata.es/report/0620946147> .
+
+<https://astrea.linkeddata.es/shapes#07aa5a746027050d9daa44efdf010de5>
+a               sh:NodeShape ;
+rdfs:label      "Permanenet Residence Verification" ;
+sh:name         "Permanenet Residence Verification" ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  citser:PermanenetResidenceVerification .
+
+<https://astrea.linkeddata.es/shapes#809d3fecb4de54565609e1ed80043640>
+a            sh:PropertyShape ;
+rdfs:label   "based on source" ;
+sh:class     citser:Source ;
+sh:name      "based on source" ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      citser:basedOnSource .
+
+<https://astrea.linkeddata.es/shapes#9783bb26e48b71bb75b475f8a899447a>
+a               sh:NodeShape ;
+rdfs:label      "Responsability" ;
+sh:name         "Responsability" ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  citser:Responsability .
+
+<https://astrea.linkeddata.es/shapes#5e3043e7c2502891ec5bb8e30d6bacad>
+a               sh:NodeShape ;
+rdfs:label      "Spatial Unit" ;
+sh:name         "Spatial Unit" ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#4192465c95d2ad50968e755613048a24> ;
+sh:targetClass  citser:SpatialUnit .
+
+<https://astrea.linkeddata.es/shapes#243c32ef063e36c1102225822e3a016e>
+a            sh:PropertyShape ;
+rdfs:label   "registered under" ;
+sh:class     citser:Rule ;
+sh:name      "registered under" ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      citser:registeredUnder .
+
+<https://astrea.linkeddata.es/shapes#99e2c0119dbf0b7e6c8cf15b975c4cf6>
+a               sh:NodeShape ;
+rdfs:label      "Basic Administrative Unit Legal Relationship" ;
+sh:name         "Basic Administrative Unit Legal Relationship" ;
+sh:nodeKind     sh:IRI ;
+sh:targetClass  citser:BasicAdministrativeUnitLegalRelationship .
+
+<https://astrea.linkeddata.es/shapes#0f59f45779cb7c01c4d6f39b9f69d98a>
+a               sh:NodeShape ;
+rdfs:label      "Party" ;
+sh:name         "Party" ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#84fe5649b58c3d93daf8cf55d13ebe9d> ;
+sh:targetClass  citser:Party .
+
+<https://astrea.linkeddata.es/shapes#442bb83430aee152b9bb6b2a53c7bc65>
+a               sh:NodeShape ;
+rdfs:label      "Source" ;
+sh:name         "Source" ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#99deaa7c74a86e6213cc5c66bf8f2a15> , <https://astrea.linkeddata.es/shapes#e794a4cb73c132bee9da497e296f5d28> , <https://astrea.linkeddata.es/shapes#f32a02717b081236b4f922297701c92d> ;
+sh:targetClass  citser:Source .
+
+<https://astrea.linkeddata.es/shapes#0ffa821a9439ce314cb7f4ec2eee190d>
+a               sh:NodeShape ;
+rdfs:label      "Spatial Unit Group" ;
+sh:name         "Spatial Unit Group" ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#ff341d08a60890a182515261fdf67539> , <https://astrea.linkeddata.es/shapes#d55c23a70c127248d154a18065e8c791> ;
+sh:targetClass  citser:SpatialUnitGroup .
+
+<https://astrea.linkeddata.es/shapes#84fe5649b58c3d93daf8cf55d13ebe9d>
+a            sh:PropertyShape ;
+rdfs:label   "takes party at" ;
+sh:class     citser:GroupParty , citser:Process ;
+sh:name      "takes party at" ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      citser:takesPartyAt .
+
+<https://astrea.linkeddata.es/shapes#e27fd911ec01b960b3b9be761f141b1b>
+a               sh:NodeShape ;
+rdfs:label      "Basic Administrative Unit Relationship" ;
+sh:name         "Basic Administrative Unit Relationship" ;
+sh:nodeKind     sh:IRI ;
+sh:property     <https://astrea.linkeddata.es/shapes#fd72456c83f8ee3e2e7ffe40b0dc6124> ;
+sh:targetClass  citser:BasicAdministrativeUnitRelationship .
+
+<https://astrea.linkeddata.es/shapes#4192465c95d2ad50968e755613048a24>
+a            sh:PropertyShape ;
+rdfs:label   "composed by sub spatial unit group" ;
+sh:class     citser:SpatialUnit ;
+sh:name      "composed by sub spatial unit group" ;
+sh:nodeKind  sh:BlankNodeOrIRI ;
+sh:path      citser:composedBySubSpatialUnitGroup .

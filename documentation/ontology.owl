@@ -1,0 +1,543 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://stics.linkeddata.es/def/citser#"
+     xml:base="https://stics.linkeddata.es/def/citser"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://stics.linkeddata.es/def/citser#">
+        <owl:versionIRI rdf:resource="https://stics.linkeddata.es/def/citser#/0.0.1"/>
+        <terms:contributor>Jorge Almeida</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-01</terms:created>
+        <terms:creator>María Poveda-Villalón</terms:creator>
+        <terms:description xml:lang="en">The STICS ontology for describing citizen services related to spatial units and land regularion.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="en">The STICS citizen services ontology</terms:title>
+        <vann:preferredNamespacePrefix>citser</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://stics.linkeddata.es/def/citser#"/>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#administeredBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://stics.linkeddata.es/def/citser#administeredBy">
+        <rdfs:domain rdf:resource="https://stics.linkeddata.es/def/citser#Land"/>
+        <rdfs:range rdf:resource="https://stics.linkeddata.es/def/citser#LandAdministrationProcess"/>
+        <rdfs:label>administered by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#appliesFor -->
+
+
+    <owl:ObjectProperty rdf:about="https://stics.linkeddata.es/def/citser#appliesFor">
+        <rdfs:domain rdf:resource="https://stics.linkeddata.es/def/citser#PhysicalPerson"/>
+        <rdfs:range rdf:resource="https://stics.linkeddata.es/def/citser#PermanenetResidenceVerification"/>
+        <rdfs:label>applies for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#basedOnSource -->
+
+
+    <owl:ObjectProperty rdf:about="https://stics.linkeddata.es/def/citser#basedOnSource">
+        <rdfs:domain rdf:resource="https://stics.linkeddata.es/def/citser#Rule"/>
+        <rdfs:range rdf:resource="https://stics.linkeddata.es/def/citser#Source"/>
+        <rdfs:label>based on source</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#composedBySpatialUnit -->
+
+
+    <owl:ObjectProperty rdf:about="https://stics.linkeddata.es/def/citser#composedBySpatialUnit">
+        <rdfs:domain rdf:resource="https://stics.linkeddata.es/def/citser#SpatialUnitGroup"/>
+        <rdfs:range rdf:resource="https://stics.linkeddata.es/def/citser#SpatialUnit"/>
+        <rdfs:label>composed by spatial unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#composedBySpatialUnitGroup -->
+
+
+    <owl:ObjectProperty rdf:about="https://stics.linkeddata.es/def/citser#composedBySpatialUnitGroup">
+        <rdfs:domain rdf:resource="https://stics.linkeddata.es/def/citser#SpatialUnitGroup"/>
+        <rdfs:range rdf:resource="https://stics.linkeddata.es/def/citser#SpatialUnitGroup"/>
+        <rdfs:label>composed by spatial unit group</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#composedBySubSpatialUnitGroup -->
+
+
+    <owl:ObjectProperty rdf:about="https://stics.linkeddata.es/def/citser#composedBySubSpatialUnitGroup">
+        <rdfs:domain rdf:resource="https://stics.linkeddata.es/def/citser#SpatialUnit"/>
+        <rdfs:range rdf:resource="https://stics.linkeddata.es/def/citser#SpatialUnit"/>
+        <rdfs:label>composed by sub spatial unit group</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#consistOfSpatialUnit -->
+
+
+    <owl:ObjectProperty rdf:about="https://stics.linkeddata.es/def/citser#consistOfSpatialUnit">
+        <rdfs:domain rdf:resource="https://stics.linkeddata.es/def/citser#BasicAdministrativeUnit"/>
+        <rdfs:range rdf:resource="https://stics.linkeddata.es/def/citser#SpatialUnit"/>
+        <rdfs:label>consist of spatial unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#coveredBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://stics.linkeddata.es/def/citser#coveredBy">
+        <rdfs:domain rdf:resource="https://stics.linkeddata.es/def/citser#Land"/>
+        <rdfs:range rdf:resource="https://stics.linkeddata.es/def/citser#Rule"/>
+        <rdfs:label>covered by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#involedBasicAdministrativeUnit -->
+
+
+    <owl:ObjectProperty rdf:about="https://stics.linkeddata.es/def/citser#involedBasicAdministrativeUnit">
+        <rdfs:domain rdf:resource="https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitRelationship"/>
+        <rdfs:range rdf:resource="https://stics.linkeddata.es/def/citser#BasicAdministrativeUnit"/>
+        <rdfs:label>involed basic administrative unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#registeredUnder -->
+
+
+    <owl:ObjectProperty rdf:about="https://stics.linkeddata.es/def/citser#registeredUnder">
+        <rdfs:domain rdf:resource="https://stics.linkeddata.es/def/citser#BasicAdministrativeUnit"/>
+        <rdfs:range rdf:resource="https://stics.linkeddata.es/def/citser#Rule"/>
+        <rdfs:label>registered under</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#takesPartyAt -->
+
+
+    <owl:ObjectProperty rdf:about="https://stics.linkeddata.es/def/citser#takesPartyAt">
+        <rdfs:domain rdf:resource="https://stics.linkeddata.es/def/citser#Party"/>
+        <rdfs:range rdf:resource="https://stics.linkeddata.es/def/citser#GroupParty"/>
+        <rdfs:range rdf:resource="https://stics.linkeddata.es/def/citser#Process"/>
+        <rdfs:label>takes party at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#acceptance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://stics.linkeddata.es/def/citser#acceptance">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>acceptance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#availabilityStatus -->
+
+
+    <owl:DatatypeProperty rdf:about="https://stics.linkeddata.es/def/citser#availabilityStatus">
+        <rdfs:label>availability status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#extArchiveID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://stics.linkeddata.es/def/citser#extArchiveID">
+        <rdfs:label>ext archive i d</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#lifeSpanStramp -->
+
+
+    <owl:DatatypeProperty rdf:about="https://stics.linkeddata.es/def/citser#lifeSpanStramp">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>life span stramp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#BasicAdministrativeUnit -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#BasicAdministrativeUnit">
+        <rdfs:label>Basic Administrative Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitLegalRelationship -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitLegalRelationship">
+        <rdfs:subClassOf rdf:resource="https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitRelationship"/>
+        <rdfs:label>Basic Administrative Unit Legal Relationship</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitRelationship -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitRelationship">
+        <rdfs:label>Basic Administrative Unit Relationship</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitSpatialRelationship -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitSpatialRelationship">
+        <rdfs:subClassOf rdf:resource="https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitRelationship"/>
+        <rdfs:label>Basic Administrative Unit Spatial Relationship</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitTemporalRelationship -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitTemporalRelationship">
+        <rdfs:subClassOf rdf:resource="https://stics.linkeddata.es/def/citser#BasicAdministrativeUnitRelationship"/>
+        <rdfs:label>Basic Administrative Unit Temporal Relationship</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#GroupParty -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#GroupParty">
+        <rdfs:label>Group Party</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#Land -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#Land">
+        <rdfs:label>Land</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#LandAdministrationProcess -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#LandAdministrationProcess">
+        <rdfs:subClassOf rdf:resource="https://stics.linkeddata.es/def/citser#Process"/>
+        <rdfs:label>Land Administration Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#Party -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#Party">
+        <rdfs:label>Party</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#PermanenetResidenceVerification -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#PermanenetResidenceVerification">
+        <rdfs:subClassOf rdf:resource="https://stics.linkeddata.es/def/citser#Process"/>
+        <rdfs:label>Permanenet Residence Verification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#PhysicalPerson -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#PhysicalPerson">
+        <rdfs:subClassOf rdf:resource="https://stics.linkeddata.es/def/citser#Party"/>
+        <rdfs:label>Physical Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#Process -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#Process">
+        <rdfs:label>Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#Responsability -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#Responsability">
+        <rdfs:subClassOf rdf:resource="https://stics.linkeddata.es/def/citser#Rule"/>
+        <rdfs:label>Responsability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#Restriction -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#Restriction">
+        <rdfs:subClassOf rdf:resource="https://stics.linkeddata.es/def/citser#Rule"/>
+        <rdfs:label>Restriction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#Right -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#Right">
+        <rdfs:subClassOf rdf:resource="https://stics.linkeddata.es/def/citser#Rule"/>
+        <rdfs:label>Right</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#Rule -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#Rule">
+        <rdfs:label>Rule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#Source -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#Source">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://stics.linkeddata.es/def/citser#acceptance"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://stics.linkeddata.es/def/citser#extArchiveID"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://stics.linkeddata.es/def/citser#lifeSpanStramp"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#SpatialUnit -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#SpatialUnit">
+        <rdfs:label>Spatial Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://stics.linkeddata.es/def/citser#SpatialUnitGroup -->
+
+
+    <owl:Class rdf:about="https://stics.linkeddata.es/def/citser#SpatialUnitGroup">
+        <rdfs:label>Spatial Unit Group</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
