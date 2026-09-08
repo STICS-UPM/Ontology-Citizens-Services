@@ -77,7 +77,7 @@
   "@id" : "https://stics.linkeddata.es/def/citser#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/contributor" : [ {
-    "@value" : "Jorge Almeida"
+    "@value" : "Jorge Almela"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -104,7 +104,7 @@
     "@id" : "https://stics.linkeddata.es/def/citser#"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://stics.linkeddata.es/def/citser#/0.0.1"
+    "@id" : "https://stics.linkeddata.es/def/citser/0.0.1"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.0.1"

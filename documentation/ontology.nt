@@ -1,6 +1,6 @@
 <https://stics.linkeddata.es/def/citser#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://stics.linkeddata.es/def/citser#> <http://www.w3.org/2002/07/owl#versionIRI> <https://stics.linkeddata.es/def/citser#/0.0.1> .
-<https://stics.linkeddata.es/def/citser#> <http://purl.org/dc/terms/contributor> "Jorge Almeida" .
+<https://stics.linkeddata.es/def/citser#> <http://www.w3.org/2002/07/owl#versionIRI> <https://stics.linkeddata.es/def/citser/0.0.1> .
+<https://stics.linkeddata.es/def/citser#> <http://purl.org/dc/terms/contributor> "Jorge Almela" .
 <https://stics.linkeddata.es/def/citser#> <http://purl.org/dc/terms/created> "2026-04-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://stics.linkeddata.es/def/citser#> <http://purl.org/dc/terms/creator> "María Poveda-Villalón" .
 <https://stics.linkeddata.es/def/citser#> <http://purl.org/dc/terms/description> "The STICS ontology for describing citizen services related to spatial units and land regularion."@en .
